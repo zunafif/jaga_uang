@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ModalPemasukan from './Modal'
 
 function Form(props) {
 
