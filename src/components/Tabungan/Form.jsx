@@ -69,7 +69,7 @@ function Form(props) {
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                                      value={task} onChange={changeTask}></textarea>
                                 </div>
-                                <button id="myBtn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" 
+                                <button id="myBtn" type="button" class="btn btn-primary"
                                 onClick={
                                     handleClikButton
                                     }>
