@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ModalPemasukan from './Modal'
 
 function Form(props) {
 
@@ -35,7 +36,7 @@ function Form(props) {
     }
     
     const clear = () => {
-        
+        setDate('')
         setTime('')
         setMasuk('')
         setTask('')
@@ -79,6 +80,7 @@ function Form(props) {
                     </div>
                 </div>
             </div>
+            <ModalPemasukan></ModalPemasukan>
         </>
     )
 }
