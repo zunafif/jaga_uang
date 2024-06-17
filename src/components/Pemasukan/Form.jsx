@@ -35,7 +35,7 @@ function Form(props) {
     }
     
     const clear = () => {
-        setDate('')
+        
         setTime('')
         setMasuk('')
         setTask('')

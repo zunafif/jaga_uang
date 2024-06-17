@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import { Link, Route, Routes, BrowserRouter } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -17,6 +17,13 @@ import Pengeluaran from './components/Pengeluaran/Pengeluaran';
 import Tabungan from './components/Tabungan/Tabungan';
 
 function App() {
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setCount((count) => count + 1);
+    }, 1000);
+  });
 
   return (
     <>
@@ -40,6 +47,8 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <br />
+      <h4>Anda telah mengunjungi web ini selama {count} detik</h4>
       <br />
       <Container>
         <Row>
